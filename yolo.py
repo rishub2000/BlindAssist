@@ -34,10 +34,10 @@ optimize_tf_gpu(tf, K)
 
 default_config = {
         "model_type": 'tiny_yolo3_darknet',
-        "weights_path": os.path.join('weights', 'yolov3-tiny.h5'),
+        "weights_path": os.path.join('BlindAssist','weights', 'yolov3-tiny.h5'),
         "pruning_model": False,
-        "anchors_path": os.path.join('configs', 'tiny_yolo3_anchors.txt'),
-        "classes_path": os.path.join('configs', 'coco_classes.txt'),
+        "anchors_path": os.path.join('BlindAssist','configs', 'tiny_yolo3_anchors.txt'),
+        "classes_path": os.path.join('BlindAssist','configs', 'coco_classes.txt'),
         "score" : 0.1,
         "iou" : 0.4,
         "model_image_size" : (416, 416),
